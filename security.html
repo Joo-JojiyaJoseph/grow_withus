@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134917537-1"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-134917537-1');
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://infolks.info/images/logo/logo5.png" type="image/png" sizes="16x16" alt="infolks">
+    <link rel="stylesheet" href="asset/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+   <meta name="description" content="At Infolks, we process quality training data for applications in diverse use-cases. Know more about our expertise.">
+<meta name="keywords" content="autonomous vehicles,robot,robotics,agriculture data,ai,aerial maps,uscases,ml,medical annotation,data processing,autonomous cars,self driving car">
+<title>Data Security | INFOLKS</title>
+        <style>
+        
+        #free-demo{
+            position:absolute;
+            top:110%;
+            left:8%;
+            opacity:0;
+            height:50%!important;
+            transition: all 0.6s ease-in-out;
+        }
+        #free-more:hover  #free-demo{
+            opacity:1;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body  style="background-image:url(https://infolks.info/images/bg/car-doodle2.png);background-attachment:fixed;" uk-parallax="bgy: -800">
+    <div class="error">
+ 
+</div>
+
+<div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left" style="padding: 0px 93px;">
+
+            <a class="uk-navbar-item" href="index.html"><img src="https://infolks.info/images/logo/logo.svg" width="150"
+                    height="auto" alt="Infolks Image Annotation"></a>
+
+        </div>
+
+        <div class="uk-navbar-right" style="padding: 0px 93px 0px 0px">
+            <ul class="uk-navbar-nav">
+
+              
+                <li class="uk-text-bold"><a href="index.html">grow with us</a></li>
+                <li class="uk-text-bold"><a href="quality.html">Quality</a></li>
+                <li class="uk-text-bold"><a href="security.html">Data Security</a></li>
+
+                    </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="uk-hidden@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="container navbar navbar-light bg-light p-2">
+        <img src="https://infolks.info/images/logo/logo.svg" width="150" height="auto" alt="infolks">
+
+        <ul class="nav justify-content-end uk-flex uk-flex-middle">
+            <a class="uk-margin-right" uk-toggle="target: #offcanvas-nav-primary"><i style="color:#2e4c98;"
+                    class="fas fa-stream uk-h2"></i></a>
+        </ul>
+    </nav>
+</div>
+
+
+
+<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true; flip: true">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                 
+                <li class=""><a href="index.html">grow with us</a></li>
+                <li class=""><a href="quality.html">Quality</a></li>
+                <li class=""><a href="security.html">Data Security</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="gdpr uk-hidden">
+
+    <img src="https://infolks.info/images/iso-27001.png" alt="iso27001 Infolks Image annotation" srcset="">
+    <img src="https://infolks.info/images/logo/eu_gdpr.png" alt="EUGDPR Infolks Image annotation" srcset="">
+</div>
+
+
+    <div id="app" style="overflow:hidden;">
+
+<section>
+
+    <div class="container-fluid uk-visible@m">
+        <div class="row ifo-banner" style="height:88vh; background:url(https://infolks.info/images/new/datatsecuritybanner.png);background-size: contain;">
+            <div class="col mt-5" uk-grid>
+                <div class="p-5 ifo-intro-h uk-width-1-2@m">
+                    <h2 class="h1"><span id="ifo-intro">Data Security</h2> <br>
+                    <div uk-grid>
+                        <div class="">
+                            <p class="pt-4 ifo-home-lead lead uk-text-justify">We respect data security the most and ensure that your information gets the same respect.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid uk-hidden@m">
+            <div class="row ifo-banner" style="height:88vh; background:url(https://infolks.info/images/new/datatsecuritybanner.png);background-size: cover;">
+                <div class="col mt-5">
+                    <div class="p-3 ifo-intro-h bg-white rounded">
+                        <h2 class="h1"><span>Data Security</span></h2>
+                        <!-- {{-- <p class="pt-4 ifo-home-lead lead">We respect data security the most and ensure that your information gets the same respect.</p> --}} -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+<section>
+    <div class="container">
+        <div class="row uk-hidden@m">
+            <div class="col">
+                <div class="text-center">
+                    <div class="card-body">
+                        <p class="pt-4 ifo-home-lead lead uk-text-justify">We respect data security the most and ensure that your information gets the same respect.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-grid-collapse uk-child-width-1-1@s" uk-grid>
+            <div class="uk-flex uk-flex-middle">
+                <div class="uk-card-body">
+                    <p class="ifo-q1 lead text-center uk-visible@m m-auto p-2" style="width:400px">How we assure?</p>
+                    <p class="ifo-q1 lead text-center uk-hidden@m m-auto p-2" style="width:200px">How we assure?</p>
+                    <!-- {{-- <h3 class="uk-card-title uk-text-center">How we assure?</h3> --}} -->
+                    <div class="">
+
+                        <!-- {{-- ------------------------------------------------------------------- --}} -->
+                        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                            <div class="uk-card-media-left uk-cover-container uk-flex uk-flex-middle mt-3">
+                                <img src="https://infolks.info/images/new/Certification.png" alt="Level 1" >
+                            </div>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Certifications</h3>
+                                    <p class="uk-text-justify">
+                                        We are ISO 27001:2013 certified and our environment is compatible with EU GDPR standards.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                                <img src="https://infolks.info/images/new/in house employees.jpg" alt="Level 2" >
+                                <!-- {{-- <canvas width="600" height="400"></canvas> --}} -->
+                            </div>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">In-house Employees</h3>
+                                    <p class="uk-text-justify">
+                                        All our services are done by hired in-house employees at our secure work spaces. Services are neither crowdsourced nor outsourced to third parties.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                            <div class="uk-card-media-right uk-cover-container">
+                                <img src="https://infolks.info/images/new/NDA.jpg" alt="Level 2" >
+                                <!-- {{-- <canvas width="600" height="400"></canvas> --}} -->
+                            </div>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Legal NDA’s</h3>
+                                    <p class="uk-text-justify">
+                                        We make our in-house employees to sign a legally valid NDA so as to ensure secure handling of your data.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- {{-- -------------------------------------------------------------------- --}} -->
+
+                        <!-- {{-- ------------------------------------------------------------------- --}} -->
+                        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                            <div class="uk-flex-last@s uk-card-media-left uk-cover-container">
+                                <img src="https://infolks.info/images/new/Network.jpg" alt="Level 1" >
+                            </div>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Network Security</h3>
+                                    <p class="uk-text-justify">
+                                        We have implemented high standard firewall systems on our networks so as to prevent any form of cyber threats and attacks. Internal data transfer are also carried out through highly secured LAN networks.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                            <div class="uk-card-media-right uk-cover-container">
+                                <img src="https://infolks.info/images/new/Environmental access.png" alt="Level 2" >
+                                <!-- {{-- <canvas width="600" height="400"></canvas> --}} -->
+                            </div>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Environmental Access</h3>
+                                    <p class="uk-text-justify">
+                                        With a biometric office entry-exit systems, we ensure that only authorized persons enter the office environments.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- {{-- -------------------------------------------------------------------- --}} -->
+
+                        <!-- {{-- ------------------------------------------------------------------- --}} -->
+                        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                            <div class="uk-flex-last@s uk-card-media-left uk-cover-container">
+                                <img src="https://infolks.info/images/new/Surveillance.jpg" alt="Level 1" >
+                            </div>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Surveillance</h3>
+                                    <p class="uk-text-justify">
+                                        We have setup a 24/7 recording surveillance system for constant monitoring over workspace.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                            <div class="uk-card-media-right uk-cover-container">
+                                <img src="https://infolks.info/images/new/Restrictions.jpg" alt="Level 2" >
+                                <!-- {{-- <canvas width="600" height="400"></canvas> --}} -->
+                            </div>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Restrictions</h3>
+                                    <p class="uk-text-justify">
+                                        Mobile phones or any other type of electronic and data storage devices are completely restricted in office premises.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- {{-- -------------------------------------------------------------------- --}} -->
+
+                        <!-- {{-- ------------------------------------------------------------------- --}} -->
+                        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                            <div class="uk-flex-last@s uk-card-media-left uk-cover-container">
+                                <img src="https://infolks.info/images/new/Data storage.jpg" alt="Level 1" >
+                            </div>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Data Storage</h3>
+                                    <p class="uk-text-justify">
+                                        Data that we receive are downloaded and stored in highly secured computers to which only authorized personnel has access. Once the project is over, the same data are retained for another 14 days for any post project needs. After which the data is completely removed from systems.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- {{-- ------------------------------------------------------------------- --}} -->
+                        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                            <div class="uk-card-media-right uk-cover-container">
+                                <img src="https://infolks.info/images/new/handling.jpeg" alt="Level 2" >
+                                <!-- {{-- <canvas width="600" height="400"></canvas> --}} -->
+                            </div>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Data Handling</h3>
+                                    <p class="uk-text-justify">
+                                        Project data are received from clients through secured cloud storage. The shared data are then stored in a well protected master computer. These data are then passed to annotators using highly secured LAN networks. No external devices like hard disks, pen drives, etc. are used for internal data transfer. The labeled data is then collected from employees using LAN networks and stored in the master computer. Labeled data are submitted back to clients using secured cloud storage.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- {{-- -------------------------------------------------------------------- --}} -->
+                        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                                <img src="https://infolks.info/images/new/Security wing.png" alt="Level 2" >
+                                <!-- {{-- <canvas width="600" height="400"></canvas> --}} -->
+                            </div>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Dedicated Team</h3>
+                                    <p class="uk-text-justify">
+                                        A set of data security officials along with qualified lead are summoned to form a Data Security Wing for implementing accurate data security measures
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- {{-- -------------------------------------------------------------------- --}} -->
+                        
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-card uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
+            <div class="uk-flex uk-flex-middle">
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title uk-text-center">Website Privacy Policy</h3>
+                    <p class="uk-text-justify">We respect and value your privacy</a></p>
+                    <ul class="uk-list uk-list-bullet">
+                        <li><a class="uk-button uk-button-text" href="#modal-full" uk-toggle>Privacy Notice</a></li>
+                    </ul>
+
+
+                    <!-- {{-- <a class="uk-button uk-button-default" href="#modal-full" uk-toggle>Open</a> --}} -->
+
+                    <div id="modal-full" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-background-cover" style="background-image: url(https://infolks.info/images/new/DataSecurity.jpg);" uk-height-viewport></div>
+                                <div class="uk-padding-large">
+                                    <h1>Privacy Notice</h1>
+                                    <div uk-overflow-auto style="height:80vh">
+                                        <p>
+
+                                                <p> This privacy notice discloses the privacy practices for INFOLKS. This privacy notice applies solely to information collected by infolks.info. It will notify you of the following.</p>
+
+                                                <p><strong>Information collection</strong></p>
+
+                                                <p>We are the sole owners of the information collected on this site. We only have access to/collect information that you voluntarily give us via email or other direct contact from you. We will not sell or rent this information to anyone.
+                                                We will use your information to respond to you regarding the reason you contacted us.  We will not share your information with any third party outside of our organization.</p>
+
+                                                <p><strong>Your access to and control over information</strong></p>
+
+                                                <p>You can always see what data we have about you, change/correct it, have us delete it and express any concerns you have about our use of your data at any time.</p>
+                                                <p><strong>Security</strong></p>
+                                                <p>We take precautions to protect your information. When you submit sensitive information via the website, your information is protected both online and offline.</p>
+                                                <p>All the information you give to us is encrypted and transmitted to us in a secure way. We use encryption to protect sensitive information transmitted online, we also protect your information offline. Only employees who need the information to perform a specific job are granted access to personally identifiable information. We do not partner with anybody else to provide the services and there is no chance of your information being shared with the outside. The computers/servers in which we store personally identifiable information are kept in a secure environment. All of our computers are protected with the latest version of the firewall. </p>
+                                                <p>If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone at +91 7025889911 or via an email at
+                                                <code>info@infolks.in
+                                                </code>
+                                                <p>This website contains links to only our subsites infolksgroup.com and infolks.info/blog/. These two sites also practices the same privacy policies.</p>
+
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- {{-- <a class="uk-button uk-button-default" href="{{route('auto')}}">Know More</a> --}} -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </div>
+
+
+    <script src="https://infolks.info/js/app.js"></script>
+    <script src="https://infolks.info/js/type.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/js/uikit.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- @yield('script') -->
+    <script>
+        AOS.init();
+    </script>
+
+
+<footer style="overflow: hidden;" >
+  
+    <div class=" p-3" >
+        <div class="col uk-flex uk-flex-center">
+            <p>ISO 27001:2013 Certified | ISO 9001:2015 | &copy; 2022 INFOLKS</p>
+        </div>
+    </div>
+       
+    
+</footer>
+<!-- 
+@if(Request::is('career'))
+
+@else
+        <div class="{{ Request::is('career') ? 'uk-hidden':'' }}">
+    <!--Start of Tawk.to Script-->
+    <!-- <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5ca2f7621de11b6e3b065d6b/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script> -->
+    <!--End of Tawk.to Script-->
+    </div>
+<!-- @endif  -->
+
+ <script type="application/ld+json"> {
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Infolks Private Limited",
+  "url" : "https://www.infolks.info",
+  "sameAs" : [
+    "https://www.facebook.com/infolks.Group/",
+    "http://linkedin.com/company/infolks",
+    "https://www.instagram.com/infolks/?hl=en",
+    "https://twitter.com/Infolksmkd"
+  ]
+} </script>
+</body>
+</html>
+

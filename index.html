@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134917537-1"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-134917537-1');
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="{{asset('images/logo/logo5.png')}}" type="image/png" sizes="16x16" alt="infolks">
+    <link rel="stylesheet" href="asset/app.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="icon" href="https://infolks.info/images/logo/logo5.png" type="image/png" sizes="16x16" alt="infolks">
+  
+   <meta name="description" content="At Infolks, we process quality training data for applications in diverse use-cases. Know more about our expertise.">
+<meta name="keywords" content="autonomous vehicles,robot,robotics,agriculture data,ai,aerial maps,uscases,ml,medical annotation,data processing,autonomous cars,self driving car">
+<title>Quality | INFOLKS</title>
+        <style>
+       
+        #free-demo{
+            position:absolute;
+            top:110%;
+            left:8%;
+            opacity:0;
+            height:50%!important;
+            transition: all 0.6s ease-in-out;
+        }
+        #free-more:hover  #free-demo{
+            opacity:1;
+            height: 100%;
+        }
+    </style>
+
+
+<style>
+html{
+    scroll-behavior: smooth;
+}
+ .triangle {
+  width: 0;
+  height: 0;
+  border-left: 70vw solid rgba(255, 255, 255, 0.9);
+  border-right: 25vw solid transparent;
+  border-top: 40vh solid transparent;
+  /* filter: blur(8px);
+-webkit-filter: blur(8px); */
+}
+.triangle2 {
+  width: 0;
+  height: 0;
+  border-left: 70vw solid rgba(255, 255, 255, 0.9);
+  border-right: 25vw solid transparent;
+  border-bottom: 20vh solid transparent;
+}
+.more{
+    position: absolute;
+    left:69vw;
+    bottom: -25px;
+    cursor: pointer;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #2e4c9f;
+  background: white;
+  color: #2e4c9f;
+  border-radius: 50%
+}
+.hover-zoom{
+    transform: scale(1,1);
+    transition: all 0.4s ease-in-out;
+}
+.hover-zoom:hover{
+    transform: scale(1.2,1.2);
+}
+.broback{
+        position: relative;
+        background-attachment: fixed;
+        background-origin: content-box;
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-position: center;
+        width: auto; 
+        height: 200px;
+    }
+.bro  {
+        position:absolute;
+        text-decoration: none;
+        top: 0;
+        left: 0;
+        color: white;
+        width: 100%;
+        height: inherit;
+        background: #3b3b3b;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    .bro:hover{
+        opacity:0.6;
+    }
+</style>
+</head>
+<body  style="background:url(./images/bg01.jpg);background-repeat: no-repeat;background-size: cover;background-attachment: fixed;" uk-parallax="bgy: -200">
+    
+   <div class="error">
+ 
+</div>
+
+<div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left" style="padding: 0px 93px;">
+
+            <a class="uk-navbar-item" href="index.html"><img src="https://infolks.info/images/logo/logo.svg" width="150"
+                    height="auto" alt="Infolks Image Annotation"></a>
+
+        </div>
+
+        <div class="uk-navbar-right" style="padding: 0px 93px 0px 0px">
+            <ul class="uk-navbar-nav">
+
+              
+                <li class="uk-text-bold"><a href="index.html">grow with us</a></li>
+                <li class="uk-text-bold"><a href="quality.html">Quality</a></li>
+                <li class="uk-text-bold"><a href="security.html">Data Security</a></li>
+
+                    </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="uk-hidden@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="container navbar navbar-light bg-light p-2">
+        <img src="https://infolks.info/images/logo/logo.svg" width="150" height="auto" alt="infolks">
+
+        <ul class="nav justify-content-end uk-flex uk-flex-middle">
+            <a class="uk-margin-right" uk-toggle="target: #offcanvas-nav-primary"><i style="color:#2e4c98;"
+                    class="fas fa-stream uk-h2"></i></a>
+        </ul>
+    </nav>
+</div>
+
+
+
+<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true; flip: true">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                              
+                <li class=""><a href="index.html">grow with us</a></li>
+                <li class=""><a href="quality.html">Quality</a></li>
+                <li class=""><a href="security.html">Data Security</a></li>
+              </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="gdpr uk-hidden">
+
+    <img src="{{asset('images/iso-27001.png')}}" alt="iso27001 Infolks Image annotation" srcset="">
+    <img src="{{asset('images/logo/eu_gdpr.png')}}" alt="EUGDPR Infolks Image annotation" srcset="">
+</div>
+
+
+    <div id="app" style="overflow:hidden;">
+
+    <div class="uk-margin-remove">
+        <div class="uk-container">
+            <div class="uk-child-width-1-2@m uk-padding-large uk-light" uk-grid>
+                <div class="uk-padding" style="background: rgba(0, 0, 0, 0.8)">
+                    <h1>Empowering Artificial Intelligence through Human Intelligence</h1>
+                    <p>With accurate labeling, we process high quality annotated training data for your machines at the most reasonable charge in the market</p>
+                </div>
+                <!-- <div><img class="uk-padding-remove" src="./images/01.png" width="400" alt=""></div> -->
+            </div>
+            
+        </div>
+        <div style="position:relative; margin-top:-100px">
+            <div class="triangle"></div>
+            <a href="#next"><div class="circle more hover-zoom uk-flex uk-flex-center uk-flex-middle"><i class="fas fa-chevron-down"></i></div></a>
+        </div>
+    </div>
+    <div style="background:rgba(255, 255, 255, 0.9);">    
+        <div class="uk-container uk-padding-large">
+            <div id="next" class="uk-child-width-1-2@m uk-padding-large" uk-grid>
+                <div>
+                    <!-- <video src="images/video.mp4" loop muted playsinline uk-video="autoplay: inview"></video> -->
+                    <iframe src="https://infolks.info/images_new/Final-2020.mp4" width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+                </div>
+                <div>
+                    <h3>Looking for a Partner ?</h3>
+                    <p>When choosing the best annotation partners, these are the first questions you should ask: <br>
+                    <ul class="uk-list uk-list-bullet">
+                        <li>How long they are in the market?</li>
+                        <li>What kind of annotations do they do?</li>
+                        <li>Will service charge suit the budget?</li>
+                        <li>Are there any free demo offered by the company?</li>
+                        <li>How well data security measures are enabled?</li>
+                        <li>How well are the service conditions flexible?</li>
+                    </ul>
+                    </p>
+                    <p>Find out how Infolks is unique in all these aspects in its own way</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="uk-container">
+            <h2 class="uk-heading-line uk-text-center"><span>Why Us ? 	</span></h2>
+		
+            <div id="next" class="uk-child-width-1-2@m" uk-grid>
+                    <div>
+                            <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
+    
+                                    <ul class="uk-slider-items uk-grid">
+                                        <li class="uk-width-3-4">
+                                            <div class="uk-panel">
+                                                <img src="./images/4.jpg" alt="">
+                                                <!--<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">-->
+                                                <!--    <h3 class="uk-margin-remove">Bounding Box</h3>-->
+                                                <!--</div>-->
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-3-4">
+                                            <div class="uk-panel">
+                                                <img src="./images/2.jpg" alt="">
+                                                <!--<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">-->
+                                                <!--    <h3 class="uk-margin-remove">Condour</h3>-->
+                                                <!--</div>-->
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-3-4">
+                                            <div class="uk-panel">
+                                                <img src="./images/3.jpg" alt="">
+                                                <!--<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">-->
+                                                <!--    <h3 class="uk-margin-remove">Semantic Segmentation</h3>-->
+                                                <!--</div>-->
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-3-4">
+                                            <div class="uk-panel">
+                                                <img src="./images/5.jpg" alt="">
+                                                <!--<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">-->
+                                                <!--    <h3 class="uk-margin-remove">Cuboidal</h3>-->
+                                                <!--</div>-->
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-3-4">
+                                            <div class="uk-panel">
+                                                <img src="./images/1.jpg" alt="">
+                                                <!--<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">-->
+                                                <!--    <h3 class="uk-margin-remove">Key Point</h3>-->
+                                                <!--</div>-->
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-3-4">
+                                            <div class="uk-panel">
+                                                <img src="./images/6.jpg" alt="">
+                                                <!--<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">-->
+                                                <!--    <h3 class="uk-margin-remove">Polyline</h3>-->
+                                                <!--</div>-->
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                
+                                </div>
+                    </div>
+                    <div>
+                        <h3>Fully Customizable Tool</h3>
+                        <p>LabelMore is our labeling platform on which we perform accurate annotations to process quality training data. Some of its key features include: <br>
+                        <ul class="uk-list uk-list-bullet">
+                            <li>Diverse annotations like bounding box, polygon/contour, polyline, semantic segmentation, cuboidal, and key points.</li>
+                            <li>Allows any number of labels per image or video frame.</li>
+                            <li>Primarily tool supports JSON format.</li>
+                            <li>Can convert output into any formats according to client’s needs</li>
+                            <li>Extended features and functionalities through plugins designed that suite project requirements</li>
+                        </ul>
+                        <a target="_blank" href="./Sample.zip" class="uk-button uk-button-default">Download Sample</a>
+                        </p>
+                    </div>
+                    
+                </div>
+            <div id="next" class="uk-child-width-1-2@m uk-padding-large uk-flex uk-flex-middle" uk-grid>
+                <div class="uk-flex-last@s">
+                         <!--<img class="uk-padding-remove" src="https://infolks.info/images/icon/best.png" width="400" alt=""> -->
+                        <div class="broback" style="background:url(./images/bro.png);">
+                            <div class="bro uk-flex uk-flex-center uk-flex-middle">
+                                <a target="_blank" style="color: white;text-decoration:none;font-size: 60px;" href="https://infolks.info/images_new/infolks.pdf"> <strong><i class="far fa-arrow-alt-circle-down"></i></strong></a>
+                            </div>
+                        </div>
+                </div>
+                <div>
+                    <h3>Experience With Expertise</h3>
+                    <p class="uk-text-justify">With immense experience of more than 5 years exclusively in image annotation, we are the <a href="https://infolks.info"> No.1 data labelers </a> in India. Our team has expertise annotating various forms of data like images, videos, text and audio clippings using various annotation techniques. Over the course of time we have annotated data for <a href="https://infolks.info/usecases">various use cases</a> like :</p>
+                    <div class="uk-child-width-1-2" uk-grid>
+                        <div>
+                            <ul class="uk-list uk-list-bullet">
+                                <li><a href="https://infolks.info/autonomous-vehicle">Autonomous Vehicles</a></li>
+                                <li><a href="https://infolks.info/agriculture">Agri-Tech</a></li>
+                                <li><a href="https://infolks.info/medical">Med-Tech</a></li>
+                                <li><a href="https://infolks.info/logistics">Logi-Tech</a></li>
+                                <li><a href="https://infolks.info/sports-and-games">Sports-Tech</a></li>
+                                <li><a href="https://infolks.info/aerial-Annotation">Aerial</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="uk-list uk-list-bullet">
+                                <li><a href="https://infolks.info/nlp">NLP Services</a></li>
+                                <li><a href="https://infolks.info/3d-point-cloud">3D Point Cloud</a></li>
+                                <li><a href="https://infolks.info/human-attribution">Human Attribution</a></li>
+                                <li><a href="https://infolks.info/retail">Retail-Tech</a></li>
+                                <li><a href="https://infolks.info/audio">Audio Transcription</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <br>
+                    <a target="_blank" href="https://infolks.info/images_new/infolks.pdf" class="uk-button uk-button-default">View Brochure</a>
+                </div>
+                
+            </div>
+            <div id="next" class="uk-child-width-1-2@m uk-padding-large uk-flex uk-flex-middle" uk-grid>
+                <div >
+                        <!-- <img class="uk-padding-remove" src="https://infolks.info/images/icon/best.png" width="400" alt=""> -->
+                        <!--<div class="" style="background:url(./images/OBC-01.jpg);">-->
+                            <!--<div class="bro uk-flex uk-flex-center uk-flex-middle">-->
+                            <!--    <a target="_blank" style="color: white;text-decoration:none;font-size: 60px;" href="https://infolks.info/images/ISO 9001 2015.pdf"> <strong><i class="far fa-arrow-alt-circle-down"></i></strong></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <img class="uk-padding-remove" src="./images/OBC-01.jpg" width="400" alt="">
+                    </div>
+                <div>
+                    <h3>Offshore Dedicated Centers</h3>
+                    <p class="uk-text-justify">Being an outsourcing expert, we have also become a well-known outstaffing agency. With our outstaffing services you can get a dedicated offshore center for your team. We have set up an offshore dedicated center (ODC) for the project of a German based fortune 500 automotive giant. With our services you get:</p>
+                    <!--<span><a target="_blank" href="https://infolks.info/images/ISO 9001 2015.pdf" class="uk-button uk-button-default">View Certificate</a></span>-->
+                    <!--<span><a target="_blank" href="https://infolks.info/quality" class="uk-button uk-button-default">Know More</a></span>-->
+                    <ul class="uk-list uk-list-bullet">
+                        <li>An exclusive team of experts</li>
+                        <li>An exclusive workspace with improved infrastructure</li>
+                        <li>Assistance in setting up required measures and policies</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div id="next" class="uk-child-width-1-2@m uk-padding-large uk-flex uk-flex-middle" uk-grid>
+                <div class="uk-flex-last@s">
+                        <!-- <img class="uk-padding-remove" src="https://infolks.info/images/icon/best.png" width="400" alt=""> -->
+                        <div>
+                            <img class="uk-padding-remove" src="https://infolks.info/images_new/Quality.jpg" width="400" alt="">
+                            <!--<div class="bro uk-flex uk-flex-center uk-flex-middle">-->
+                            <!--    <a target="_blank" style="color: white;text-decoration:none;font-size: 60px;" href="https://infolks.info/images/ISO 9001 2015.pdf"> <strong><i class="far fa-arrow-alt-circle-down"></i></strong></a>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                <div>
+                    <h3>Premium Quality</h3>
+                    <p class="uk-text-justify">We are capable of delivering high-quality annotations at a large scale irrespective of the volume of data to be handled. We are ISO 9001:2015 certified for ensuring effective quality management systems. With a triple level quality check mechanism, our large number of young annotators assure you premium quality services.</p>
+                    <span><a target="_blank" href="https://infolks.info/images/ISO 9001 2015.pdf" class="uk-button uk-button-default">View Certificate</a></span>
+                    <span><a target="_blank" href="quality.html" class="uk-button uk-button-default">Know More</a></span>
+                </div>
+                
+            </div>
+            <div id="next" class="uk-child-width-1-2@m uk-padding-large uk-flex uk-flex-middle" uk-grid>
+                <div >
+                    <!-- <img class="uk-padding-remove" src="https://infolks.info/images/icon/data.png" width="400" alt=""> -->
+                    <div>
+                        <img class="uk-padding-remove" src="https://infolks.info/images_new/data security.jpeg" width="400" alt="">
+                        <!--<div class="bro uk-flex uk-flex-center uk-flex-middle">-->
+                        <!--    <a target="_blank" style="color: white;text-decoration:none;font-size: 60px;" href="https://infolks.info/images/iso27001.pdf"> <strong><i class="far fa-arrow-alt-circle-down"></i></strong></a>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+                <div>
+                    <h3>Data Security</h3>
+                    <p class="uk-text-justify">We are ISO 27001:2013 certified and our systems also comply with EU GDPR standards making it 100% secure for your data. Data security is something that we never compromises and as a part of it every employees are advised to sign a NDA for ensuring safe handling of data.
+                    </p>
+                    <span><a target="_blank" href="https://infolks.info/grow-with-us/images/data_security.pdf" class="uk-button uk-button-default">View Certificate</a></span>
+                    <span><a target="_blank" href="security.html" class="uk-button uk-button-default">Know More</a></span>
+                </div>
+                
+            </div>
+            
+            <div id="next" class="uk-child-width-1-2@m uk-padding-large uk-flex uk-flex-middle" uk-grid>
+
+                <div>
+                    <h3>Reasonable Pricing</h3>
+                    <p>
+                        <ul class="uk-list uk-list-bullet">
+                            <li id="free-more" style="cursor: pointer;position: relative;"><strong>Free Demo <i class="far fa-question-circle"></i></strong>
+                                <div id="free-demo" style="position:absolute;top:-20px;left:40%; z-index:1000;">
+                                    <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded" style="position:relative;background: #2E4D9F;">
+                                        <div style="padding:20px;position:absolute;top:10px;background:#2E4D9F;transform: rotate(45deg);left:-10px;"></div>
+                                        <ul class="uk-list">
+                                            <li>Services free of cost</li>
+                                            <li>Risk-free services with no document signing</li>
+                                            <li>Services provided until complete satisfaction</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>Project support</li>
+                            <li>Prompt services</li>
+                            <li>Premium Annotation Quality</li>
+                            <li>Dedicated Project Teams</li>
+                            <li>Lowest hourly rate in the global marketplace</li>
+    
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <img class="uk-padding-remove" src="https://infolks.info/images/banner/freedemo.png" width="400" alt="">
+                </div>
+                              
+            </div>
+        </div>
+       
+       
+       <!--<.......................................clients................................../>-->
+        
+        <div class="uk-container uk-padding" style="margin-bottom:70px">
+            <h2 class="uk-heading-line uk-text-center"><span>Our Clients</span></h2>
+                <div class="container">
+        <div class="row">
+            <div class="col" data-aos="fade-up">
+                    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="autoplay: true;autoplay-interval: 2000">
+                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.awaregroup.com/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/AWARE.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.baraja.com/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/Baraja.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a> -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://bennettdatascience.com/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/Bennett Data Science.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://buildots.com/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/buildots.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.daimler.com/company/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/DAIMLER.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.daimler.com/company/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images_new/clients_new/clients/THAKRAL ONE.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.daimler.com/company/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images_new/clients_new/clients/Continetal.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://deepedge.ai/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/Deepedge.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.eyesr.fr/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/EYESR.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.fka.de/en/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/FKA.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/GIST_1.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a> -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://gramener.com/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/Gramener.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.crunchbase.com/organization/ideas-lab">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/ideaslab.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.ipsotek.com/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/ipsotek.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://jumbotail.com/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/jumbotail.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://knosis.ai/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/knosis.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <!--<div class="uk-animation-toggle" tabindex="0">-->
+                                    <div class="uk-card uk-card-default uk-animation-scale-down client" style="height:100px;box-shadow:none;border-radius:14px;">
+                                        <!--<a target="_blank" href="https://metomotion.com/">-->
+                                            <div class="uk-card-body" style="color:grey;">
+                                                <img src="https://infolks.info/images/clients/MetoMotion.png" alt="" uk-cover>
+                                            </div>
+                                        <!--</a>    -->
+                                    </div>
+                                <!--</div>-->
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.neuromation.io/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/Neuromation.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/Synthesis.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/XRSPACE.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/Ambrolab.png" class="h-100 w-100" style="object-fit:cover; border-radius:14px;" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/Animal-AI.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/Crop4Sight.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/josephinum.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/kwali.png" class="h-100 w-100" style="object-fit:cover; border-radius:14px;" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                        </ul>
+                    
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    
+                    </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col" data-aos="fade-up">
+                    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="autoplay: true;autoplay-interval: 2500">
+                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/oivi.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://pronto.ai/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/Pronto AI.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.reallearning.in/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/Reallearning.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.scopetechnology.com/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/scope1.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://scytherobotics.com/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/Scythe Robotics.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://sialitech.com/en/about-us/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/SIALI.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.sightec.com/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/Sightec.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://sigma-rail.com/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/Sigma RAIL.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.signality.com/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/signality.png" class="h-100 w-100" style="object-fit:cover; border-radius:14px;" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.stellapps.com/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/Stellapps.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://teleporthq.io/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/Teleport Hq.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.xesolinnovation.com/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/XESOL.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.zuehlke.com/ch/en/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/zuhlke.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/100companis.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/Scalar.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/space.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/clients/AirProbe.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/clients/angsa.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/clients/DefinedCrowd.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/clients/FOGHORN.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/clients/ULTINOUS.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/Panoptes.png" class="h-100 w-100" style="object-fit:cover; border-radius:14px;" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/paracosma.png" class="h-100 w-100" style="object-fit:cover; border-radius:14px;" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/ponchon.png" class="h-100 w-100" style="object-fit:cover; border-radius:14px;" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/Preamble.png" class="h-100 w-100" style="object-fit:cover; border-radius:14px;" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/Prezerve-Tech.png" class="h-100 w-100" style="object-fit:cover; border-radius:14px;" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                        </ul>
+                    
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    
+                    </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col" data-aos="fade-up">
+                    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="autoplay: true;autoplay-interval: 3000">
+                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m uk-grid">
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/AFS.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/AGROLAY.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/alp.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/ateq.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/AUCLAND.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/BENZ.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/Clry.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/confidential-ele.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/confidential-Retail.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/DataVLab-SASU.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/Deepsmile.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/dfa.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/Dreamplug.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/GUARDIAN.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/ill.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/Inrae.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/mercedes.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/photoguage.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/Proeom.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/Proppos.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/clients/h-aero.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/clients/INFILECT.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/clients/Matroid.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <!--<li>-->
+                            <!--    <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">-->
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                            <!--            <div class="uk-card-body" style="color:grey;">-->
+                            <!--                <img src="https://infolks.info/images_new/clients_new/clients/origin1 health.png" alt="" uk-cover>-->
+                            <!--            </div>-->
+                                    <!--</a>    -->
+                            <!--    </div>-->
+                            <!--</li>-->
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients_new/clients/Strong.png" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/Prismatec.png" class="h-100 w-100" style="object-fit:cover; border-radius:14px;" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/redbrick.png" class="h-100 w-100" style="object-fit:cover; border-radius:14px;" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/remedylogic.png" class="h-100 w-100" style="object-fit:cover; border-radius:14px;" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/shaip.png" class="h-100 w-100" style="object-fit:cover; border-radius:14px;" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default" style="height:100px;box-shadow:none;border-radius:14px;">
+                                    <!--<a target="_blank" href="https://www.oivi.co/">-->
+                                        <div class="uk-card-body" style="color:grey;">
+                                            <img src="https://infolks.info/images/clients/new/Tensormatixlabellerr.png" class="h-100 w-100" style="object-fit:cover; border-radius:14px;" alt="" uk-cover>
+                                        </div>
+                                    <!--</a>    -->
+                                </div>
+                            </li>
+                        </ul>
+                    
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="uk-container uk-padding">
+        <h2 class="uk-heading-line uk-text-center"><span>What Media Says About Us</span></h2>
+        <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="sets: true">
+
+                <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@m">
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-body" style="color:grey;height:230px">
+                                <img class="uk-padding-remove" src="https://infolks.info/images_new/silicon.png" width="100"
+                                    alt="">
+                                <h3 class="uk-card-title uk-margin-remove">10 Most Promising Data & Image Annotation Companies - 2020</h3>
+                                <p style="color:grey" class="uk-article-meta">Published by <a style="color:grey" target="_blank"
+                                        href="https://enterprise-services.siliconindia.com/ranking/data-image-annotation-companies-2020-rid-1139.html">
+                                        SILICONINDIA Magazine</a> on December, 2020</p>
+                                <a style="color:grey" target="_blank"
+                                    href="https://enterprise-services.siliconindia.com/ranking/data-image-annotation-companies-2020-rid-1139.html"
+                                    class="uk-button uk-button-text">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-body" style="color:grey;min-height:230px">
+                                <img class="uk-padding-remove" src="https://infolks.info/images/dailyo.png" width="100"
+                                    alt="">
+                                <h3 class="uk-card-title uk-margin-remove">How an army of data labelers are behind India's AI boom</h3>
+                                <p style="color:grey" class="uk-article-meta">Written by <a style="color:grey" target="_blank"
+                                        href="https://www.dailyo.in/technology/data-labelling-artificial-intelligence-indian-ai-sector-facebook-technology/story/1/32396.html">
+                                        ROSHNI MAJUMDAR</a> on January 23, 2020</p>
+                                <a style="color:grey" target="_blank"
+                                    href="https://www.dailyo.in/technology/data-labelling-artificial-intelligence-indian-ai-sector-facebook-technology/story/1/32396.html"
+                                    class="uk-button uk-button-text">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-body" style="color:grey;min-height:230px">
+                                <img class="uk-padding-remove" src="https://infolks.info/images/gn.png" width="100"
+                                    alt="">
+                                <h3 class="uk-card-title uk-margin-remove">How data preparation for AI is creating jobs
+                                    in Kerala</h3>
+                                <p style="color:grey" class="uk-article-meta">Written by <a style="color:grey" target="_blank"
+                                        href="https://gulfnews.com/world/asia/india/how-data-preparation-for-ai-is-creating-jobs-in-kerala-1.1568618232994#">Priya
+                                        Mathew</a> on September 16, 2019</p>
+                                <a style="color:grey" target="_blank"
+                                    href="https://gulfnews.com/world/asia/india/how-data-preparation-for-ai-is-creating-jobs-in-kerala-1.1568618232994"
+                                    class="uk-button uk-button-text">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-body" style="color:grey;min-height:230px">
+                                <img class="uk-padding-remove" src="https://infolks.info/images/download.png" width="60"
+                                    alt="">
+                                <h3 class="uk-card-title uk-margin-remove">How artificial intelligence is creating jobs
+                                    in India, not just stealing them</h3>
+                                <p style="color:grey" class="uk-article-meta">Written by <a style="color:grey" target="_blank"
+                                        href="https://timesofindia.indiatimes.com/toireporter/author-Sonam-Joshi-479232786.cms">Sonam
+                                        Joshi</a> on Sep 9, 2019</p>
+                                <!-- <p>Mujeeb Kolasseri, a high school dropout from Mannarkkad in Kerala, founded his own data labelling company Infolks in 2015 after learning the work online<br>
+                        </p> -->
+                                <a style="color:grey" target="_blank"
+                                    href="https://timesofindia.indiatimes.com/india/how-artificial-intelligence-is-creating-jobs-in-india-not-just-stealing-them/articleshow/71030863.cms"
+                                    class="uk-button uk-button-text">Read more</a>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-body" style="color:grey;min-height:230px">
+                                <img src="https://infolks.info/images/fd.png" width="80" alt="">
+                                <h3 class="uk-card-title uk-margin-remove">How India’s data labelers are powering the
+                                    global AI race <br> <br></h3>
+                                <p style="color:grey" class="uk-article-meta">Written by <a style="color:grey" target="_blank"
+                                        href="https://factordaily.com/author/anand/">Anand Murali</a> on March 21, 2019
+                                </p>
+
+                                <p></p>
+                                <a style="color:grey" target="_blank"
+                                    href="https://factordaily.com/indian-data-labellers-powering-the-global-ai-race/?fbclid=IwAR2OGhHZgW28Vjnv5bEFCmkZwGF14IsB_t8eOElt9Sn93dWt3FK3D8zueuE"
+                                    class="uk-button uk-button-text">Read more</a>
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+            </div>
+        <!--<hr>-->
+    </div>
+</div>
+    <!-- <footer >
+        <div style="position: relative;">
+            <div style="position: absolute; right:50px; top:20%;"><img src="https://infolks.info/images/logo/logo5w.png" width="100" height="auto" alt="Infolks"></div>
+            
+        </div>
+        <div class="col uk-flex uk-flex-center">
+            <p>ISO 27001:2013 Certified | ISO 9001:2015 | &copy; 2022 INFOLKS</p>
+        </div>
+    </footer> -->
+
+
+    <!-- UIkit JS -->
+    
+    </div>
+
+
+    <script src="{{asset('js/app.js')}}"></script>
+    <script src="{{asset('js/type.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/js/uikit.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- @yield('script') -->
+    <script>
+        AOS.init();
+    </script>
+<!-- 
+@if(Request::is('career'))
+
+@else
+        <div class="{{ Request::is('career') ? 'uk-hidden':'' }}">
+    <!--Start of Tawk.to Script-->
+    <!-- <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5ca2f7621de11b6e3b065d6b/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script> -->
+    <!--End of Tawk.to Script-->
+    </div>
+    <footer >
+        <div style="position: relative;">
+            <div class="triangle2"></div>
+            <div style="position: absolute; right:50px; top:20%;"><img src="https://infolks.info/images/logo/logo5w.png" width="100" height="auto" alt="Infolks"></div>
+        </div>
+        <div class="col uk-flex uk-flex-center">
+            <p>ISO 27001:2013 Certified | ISO 9001:2015 | &copy; 2022 INFOLKS</p>
+        </div>
+           
+        
+    </footer>
+
+<!-- @endif --> 
+
+ <script type="application/ld+json"> {
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Infolks Private Limited",
+  "url" : "https://www.infolks.info",
+  "sameAs" : [
+    "https://www.facebook.com/infolks.Group/",
+    "http://linkedin.com/company/infolks",
+    "https://www.instagram.com/infolks/?hl=en",
+    "https://twitter.com/Infolksmkd"
+  ]
+} </script>
+</body>
+</html>
+
